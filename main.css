@@ -1,0 +1,51 @@
+* {
+  margin: 3px;
+  padding: 0;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  margin: 40px 300px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+.box h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.box label {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.box button {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+  width: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 8px;
+  border-radius: 3px;
+}
+
+.box textarea {
+  height: 90px;
+  border-radius: 7px;
+  border: 3px solid black;
+  background-color: lightgrey;
+}
+/*# sourceMappingURL=main.css.map */
