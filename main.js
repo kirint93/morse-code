@@ -48,9 +48,9 @@ const sumbitBtn = document.getElementById("submitBtn");
 const  getInput = () => {
 const Input = document.getElementById("inputField").value;
 
-const text = Input.split("");
+const textArray = Input.split("");
 
-const morseCode = text.map(getArrayInput);
+const morseCode = textArray.map(getArrayInput);
 document.getElementById("outputField").value = morseCode.join("")
 };
 
@@ -58,8 +58,3 @@ document.getElementById("outputField").value = morseCode.join("")
 const getArrayInput = Input => {
     return morseCode[Input];
 }
-
-resetBtn.addEventListener("click", function(){
-    document.getElementById("inputField").value = "";
-    document.getElementById("outputField").value = "";
-});
