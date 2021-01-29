@@ -35,26 +35,17 @@ const morseCode = {
     '8': '---..',
     '9': '----.',
     '0': '-----',
-}
+};
 
+ const  getInput = () => {
+ const Input = document.getElementById("inputField").value;
 
-const resetBtn = document.getElementById("resetBtn");
-const sumbitBtn = document.getElementById("submitBtn");
-
-
-
-
-
-const  getInput = () => {
-const Input = document.getElementById("inputField").value;
-
-const textArray = Input.split("");
+ const textArray = Input.split("");
 
 const morseCode = textArray.map(getArrayInput);
 document.getElementById("outputField").value = morseCode.join("")
 };
 
-
-const getArrayInput = Input => {
+const getArrayInput = (Input) => {
     return morseCode[Input];
-}
+};
